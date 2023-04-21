@@ -1,0 +1,561 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Timzee</title>
+    <link rel="icon" href="//cdn.shopify.com/s/files/1/0075/1832/2770/files/favicon_1_16x16.png?v=1645518005">
+   <link rel="stylesheet" href="assets/css/bootstrap.css">
+   <link rel="stylesheet" href="/assets/css/shop.css">
+      <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  
+  </head>
+  <body>
+    <header>
+        <section id="Header">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="logo">
+                        <img src="/assets/Images/logo_1.webp" alt="Logo">
+                    </div>
+                </div>
+           <div class="col-lg-4">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact Us</a>
+            </nav>
+           </div>
+           <div class="col-lg-4">
+            <div class="site-header">
+               <a href="#"> <i class="fa-solid fa-user-large"></i></a>
+               <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+               <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+            </div>
+           </div>
+            </div>
+        </div>
+        </section>
+    </header>
+    <main>
+        <section id="BreadCrump">
+            <div class="container">
+                <div class="BreadCrump-all">
+                    <h1>Collection</h1>
+                    <a href="#">Home</a><span> / </span><span>Products</span>
+                </div>
+            </div>
+        </section>
+        <section id="AllShop">
+            <div class="container-fluid spacing_enabled">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="FilterShop">
+                            <div class="BestSellers">
+                                <h5>Best sellers</h5>
+                                <div class="BestSellerSlider">
+                                    <div class="product-single">
+                                        <div class="pro-img">
+                                            <a href="#">
+                                                <div class="overlay"></div>
+                                                <img src="assets/Images/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_600x.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="pro-content">
+                                            <h4><a href="#">Analog Numeral</a></h4>
+                                            <p class="m-0 prc" >$1550.00</p>
+                                        
+                                        </div>
+                                    </div>
+                                    <!-- <div class="product-single">
+                                        <div class="pro-img">
+                                            <a href="#">
+                                                <div class="overlay"></div>
+                                                <img src="assets/Images/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_600x.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="pro-content">
+                                            <h4><a href="#">Analog Numeral</a></h4>
+                                            <p class="m-0 prc" >$1550.00</p>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="product-single">
+                                        <div class="pro-img">
+                                            <a href="#">
+                                                <div class="overlay"></div>
+                                                <img src="assets/Images/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_600x.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="pro-content">
+                                            <h4><a href="#">Analog Numeral</a></h4>
+                                            <p class="m-0 prc" >$1550.00</p>
+                                        
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="availability">
+                                <h5>Availability</h5>
+                                <div class="stock">
+                                    <input type="checkbox" name="available">
+                                    <label  for="available">In stock
+                                    </label>
+                                    <span>(24)</span>
+                                </div>
+                                <div class="stock">
+                                    <input type="checkbox" name="available">
+                                    <label for="available">Out of stock
+                                    </label>
+                                    <span>(0)</span>
+                                </div>
+                            </div>
+                            <div class="Price">
+                                <h5>Price</h5>
+                                <span>The highest price is $750.00</span>
+                               <div class="allfield">
+                                <div class="pricefield">
+                                    <label for="price">From $</label>
+                                    <div class="inputdiv">
+                                        <input type="number" name="price" >
+                                    </div>
+                                </div>
+                                <div class="pricefield">
+                                    <label for="price">To $</label>
+                                    <div class="inputdiv">
+                                        <input type="number" name="price" >
+                                    </div>
+                                </div>
+                               </div>
+                            </div>
+                            <div class="Producttype">
+                                <h5>Product type</h5>
+                                <div class="type">
+                                    <input type="checkbox" name="type">
+                                    <label  for="type"> Analog
+                                    </label>
+                                    <span>(10)</span>
+                                </div>
+                                <div class="type">
+                                    <input type="checkbox" name="type">
+                                    <label  for="type"> Automatic
+                                    </label>
+                                    <span>(7)</span>
+                                </div>
+                                <div class="type">
+                                    <input type="checkbox" name="type">
+                                    <label  for="type"> Digital 
+                                    </label>
+                                    <span>(7)</span>
+                                </div>
+                            </div>
+                            <div class="Brand">
+                                <h5>Brand</h5>
+                                <div class="brandd">
+                                    <input type="checkbox" name="brnd">
+                                    <label  for="brnd"> Baggit
+                                    </label>
+                                    <span>(3)</span>
+                                </div>
+                                <div class="brandd">
+                                    <input type="checkbox" name="brnd">
+                                    <label  for="brnd">  Biltwell
+                                    </label>
+                                    <span>(1)</span>
+                                </div>
+                                <div class="brandd">
+                                    <input type="checkbox" name="brnd">
+                                    <label  for="brnd">   Fostelo
+                                    </label>
+                                    <span>(2)</span>
+                                </div>
+                                <div class="brandd">
+                                    <input type="checkbox" name="brnd">
+                                    <label  for="brnd">    Timzee
+                                    </label>
+                                    <span>(0)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="col-lg-9">
+                    <div class="ShopProducts">
+                        <div class="rightContent">
+                            <div class="grids">
+                                <i class="fa-solid fa-grip"></i>
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                            <div class="featured">
+                                <select name="sorted" id="sorted">
+                                    <option value="">Featured</option>
+                                    <option value="">Best Selling</option>
+                                    <option value="">Alphabetically,A-Z</option>
+                                    <option value="">Alphabetically,Z-A</option>
+                                    <option value="">Price,low to high</option>
+                                    <option value="">Price,high to low</option>
+                                    <option value="">Date,old to new</option>
+                                    <option value="">Date,new to old</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="rightboxes">
+                            <div class="row">
+                       <div class="col-lg-3">
+                        <div class="product-single">
+                            <div class="pro-img">
+                                <a href="#">
+                                    <div class="overlay"></div>
+                                    <img src="assets/Images/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_600x.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="pro-content">
+                                <h4><a href="#">Analog Numeral</a></h4>
+                                <p class="m-0 prc" >$1550.00</p>
+                                <div class="range">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="m-0 title">Baggit</p>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-lg-3">
+                        <div class="product-single">
+                            <div class="pro-img">
+                                <a href="#">
+                                    <div class="overlay"></div>
+                                    <img src="assets/Images/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_600x.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="pro-content">
+                                <h4><a href="#">Analog Numeral</a></h4>
+                                <p class="m-0 prc" >$1550.00</p>
+                                <div class="range">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="m-0 title">Baggit</p>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-lg-3">
+                        <div class="product-single">
+                            <div class="pro-img">
+                                <a href="#">
+                                    <div class="overlay"></div>
+                                    <img src="assets/Images/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_600x.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="pro-content">
+                                <h4><a href="#">Analog Numeral</a></h4>
+                                <p class="m-0 prc" >$1550.00</p>
+                                <div class="range">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="m-0 title">Baggit</p>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-lg-3">
+                        <div class="product-single">
+                            <div class="pro-img">
+                                <a href="#">
+                                    <div class="overlay"></div>
+                                    <img src="assets/Images/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_600x.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="pro-content">
+                                <h4><a href="#">Analog Numeral</a></h4>
+                                <p class="m-0 prc" >$1550.00</p>
+                                <div class="range">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="m-0 title">Baggit</p>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-lg-3">
+                        <div class="product-single">
+                            <div class="pro-img">
+                                <a href="#">
+                                    <div class="overlay"></div>
+                                    <img src="assets/Images/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_600x.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="pro-content">
+                                <h4><a href="#">Analog Numeral</a></h4>
+                                <p class="m-0 prc" >$1550.00</p>
+                                <div class="range">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="m-0 title">Baggit</p>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-lg-3">
+                        <div class="product-single">
+                            <div class="pro-img">
+                                <a href="#">
+                                    <div class="overlay"></div>
+                                    <img src="assets/Images/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_600x.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="pro-content">
+                                <h4><a href="#">Analog Numeral</a></h4>
+                                <p class="m-0 prc" >$1550.00</p>
+                                <div class="range">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="m-0 title">Baggit</p>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-lg-3">
+                        <div class="product-single">
+                            <div class="pro-img">
+                                <a href="#">
+                                    <div class="overlay"></div>
+                                    <img src="assets/Images/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_600x.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="pro-content">
+                                <h4><a href="#">Analog Numeral</a></h4>
+                                <p class="m-0 prc" >$1550.00</p>
+                                <div class="range">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="m-0 title">Baggit</p>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-lg-3">
+                        <div class="product-single">
+                            <div class="pro-img">
+                                <a href="#">
+                                    <div class="overlay"></div>
+                                    <img src="assets/Images/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_600x.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="pro-content">
+                                <h4><a href="#">Analog Numeral</a></h4>
+                                <p class="m-0 prc" >$1550.00</p>
+                                <div class="range">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="m-0 title">Baggit</p>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-lg-3">
+                        <div class="product-single">
+                            <div class="pro-img">
+                                <a href="#">
+                                    <div class="overlay"></div>
+                                    <img src="assets/Images/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_600x.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="pro-content">
+                                <h4><a href="#">Analog Numeral</a></h4>
+                                <p class="m-0 prc" >$1550.00</p>
+                                <div class="range">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="m-0 title">Baggit</p>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-lg-3">
+                        <div class="product-single">
+                            <div class="pro-img">
+                                <a href="#">
+                                    <div class="overlay"></div>
+                                    <img src="assets/Images/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_600x.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="pro-content">
+                                <h4><a href="#">Analog Numeral</a></h4>
+                                <p class="m-0 prc" >$1550.00</p>
+                                <div class="range">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="m-0 title">Baggit</p>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-lg-3">
+                        <div class="product-single">
+                            <div class="pro-img">
+                                <a href="#">
+                                    <div class="overlay"></div>
+                                    <img src="assets/Images/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_600x.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="pro-content">
+                                <h4><a href="#">Analog Numeral</a></h4>
+                                <p class="m-0 prc" >$1550.00</p>
+                                <div class="range">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="m-0 title">Baggit</p>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-lg-3">
+                        <div class="product-single">
+                            <div class="pro-img">
+                                <a href="#">
+                                    <div class="overlay"></div>
+                                    <img src="assets/Images/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_600x.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="pro-content">
+                                <h4><a href="#">Analog Numeral</a></h4>
+                                <p class="m-0 prc" >$1550.00</p>
+                                <div class="range">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="m-0 title">Baggit</p>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                       </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div> 
+        </section>
+
+    </main>
+    <footer id="Footer">
+        <div class="container">
+            <div class="row">
+                <div class="singleFooterArea col-lg-3">
+                    <h5> Help </h5>
+                    <ul>
+                        <li><a href="#">Search</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Shipping Details</a></li>
+                    </ul>
+                </div>
+                <div class="singleFooterArea col-lg-3">
+                    <h5> Support </h5>
+                    <ul>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Refunds & Returns</a></li>
+                        <li><a href="#">Deliveries</a></li>
+                    </ul>
+                </div>
+                <div class="singleFooterArea col-lg-3">
+                    <h5> Information </h5>
+                    <ul>
+                        <li><a href="#">Search Terms</a></li>
+                        <li><a href="#">Advanced Search</a></li>
+                        <li><a href="#">Help & Faq's</a></li>
+                        <li><a href="#">Store Location</a></li>
+                        <li><a href="#">Orders & Returns</a></li>
+                    </ul>
+                </div>
+                <div class="singleFooterArea col-lg-3">
+                    <h5> Address </h5>
+                    <ul>
+                        <li><address>
+                            <i class="fa-solid fa-house-chimney"></i>
+                            No: 58 A, East Madison Street, Baltimore, MD, USA 4508
+                        </address></li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            0000 - 123 - 456789</li>
+                        <li><a href="#">
+                            <i class="fa-solid fa-envelope"></i>
+                            info@example.com
+                        </a></li>
+                   
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/JS/Plugin.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./assets/JS/plugin.min.js"></script>    
+    
+        <script src="/assets/JS/app.js"></script>
+  </body>
+  </html>
