@@ -311,6 +311,7 @@
   position: relative;
 }
 #Team .container .teamAll .row .col-lg-3 .singleTeam .Profile:hover .sosialMedia {
+  bottom: 20px;
   opacity: 1;
 }
 #Team .container .teamAll .row .col-lg-3 .singleTeam .Profile img {
@@ -323,7 +324,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 20px;
+  bottom: 0px;
   opacity: 0;
   transition: 1s;
 }
