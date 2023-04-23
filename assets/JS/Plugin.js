@@ -44,7 +44,8 @@ $('.sliderBody').slick({
 var owl = $('.owl-carousel');
 owl.owlCarousel({
   margin: 10,
-  loop: true,
+  loop: false,
+  nav:true,
   responsive: {
     0: {
       items: 1
@@ -57,7 +58,8 @@ owl.owlCarousel({
     }
   }
 })
-
+$( ".owl-prev").html('<i class="fa fa-chevron-left"></i>');
+$( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
 $('.word-all').slick({
     dots: false,
     arrows:false,
