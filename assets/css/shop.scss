@@ -112,48 +112,169 @@
                 }
                     }
                     .BestSellerSlider{
+                      
+
                         .product-single{
                             margin-top: 30px;
                             width: 100%;
-                                 .pro-img{
-                                  width: 100%;
-                                  position: relative;
-                                  z-index: 1;
-                                 
-                                  a{
-                                      .overlay{
-                                  position: absolute;
-                                  background-color: #34353a;
-                                   z-index: -1;
-                                    height: 68%;
-                                    width: 100%;
-                                      }
-                                      img{
-                                          width: 100%;
-                                      }
-                                  }
-                                 }
-                                  .pro-content{
-                                      text-align: center;
-                                      h4{
-                                          
-                                          a{
-                                              
-                                              text-decoration: none;
-                                              font-family: 'Playfair Display', serif;
-                                              color:#fff;
-                                              font-size: 25px;
-                                          }
-                                      }
-                                      .prc{
-                                          color:#AAAAAA;
-                                          font-size: 25px;
-                                          font-weight: 600;
-                                          font-family: 'Source Sans Pro', sans-serif;
-                                      }
-                               
-                                  }
+                            &:hover{
+                               .pro-content{
+                                   h4{
+                                       a{
+                                           color: #CCA471;
+                                       }
+                                     
+                                   }
+                               }
+                            }
+                            width: 90%;
+                              .pro-img{
+                               width: 100%;
+                               position: relative;
+                               z-index: 1;
+                               margin-bottom: 20px;
+                               &:hover{
+                                   .Smallside{
+                                      opacity: 1; 
+                                   }
+                                   .overlay{
+                                       height: 100% !important;
+                                       background-color: #505155;
+                                   }
+                                  
+                               }
+                              .Smallside{
+                               display: flex;
+                               flex-direction: column !important;
+                               position: absolute;
+                               gap: 10px;
+                               right: 10px;
+                               top: 20%;
+                               opacity: 0;
+                               transition: 0.5s;
+                               a{
+                                  
+                                   
+                                   i{
+                                       color: #ffff;
+                                       font-size: 20px;
+                                       background-color: #343535;
+                                       padding: 15PX;
+                                       transition: 0.5s;
+                                       &:hover{
+                                           background-color: #CCA471;
+                                       }
+                                   }
+                               }
                               }
+                              .sale{
+                               span{
+                                   font-size: 16px;
+                                   font-family: 'Source Sans Pro', sans-serif;
+                                   color: #ffff;
+                                   background-color: #343435;
+                                   padding: 5px 10px;
+                                   position: absolute;
+                                   left: 10px;
+                                   top: 10px;
+                               }
+                              }
+                              .save{
+                               span{
+                                   font-size: 16px;
+                                   font-family: 'Source Sans Pro', sans-serif;
+                                   color: #ffff;
+                                   background-color: #343435;
+                                   padding: 5px 10px;
+                                   position: absolute;
+                                   right: 10px;
+                                   top: 10px;
+                               }
+                              }
+                               a{
+                                  
+                                   .overlay{
+                               position: absolute;
+                               background-color: #34353a;
+                                z-index: -1;
+                                 height: 68%;
+                                 width: 100%;
+                                 transition: 0.5s;
+                                
+                                   }
+                                   img{
+                                       width: 100%;
+                                   }
+                               }
+                              }
+                               .pro-content{
+                                   text-align: center;
+                                   h4{
+                                      
+                                       a{
+                                           
+                                           text-decoration: none;
+                                           font-family: 'Playfair Display', serif;
+                                           color:#fff;
+                                           font-size: 25px;
+                                       }
+                                   }
+                                   .pricee{
+                                       display: flex;
+                                       justify-content: center;
+                                       align-items: center;
+                                       gap: 10px;
+                                       
+                                       .prc{
+                                       
+                                           color:#AAAAAA;
+                                       
+                                           font-size: 28px;
+                                           font-weight: 600;
+                                           font-family: 'Source Sans Pro', sans-serif;
+                                       }
+                                       .oldprc{
+                                           color:#AAAAAA;
+                                           text-decoration: line-through;
+                                           font-size: 22px;
+                                           
+                                           font-family: 'Source Sans Pro', sans-serif;
+                                       }
+                                   }
+                               
+            
+                            
+                                   button{
+                                       text-transform: uppercase;
+                                       font-size: 20px;
+                                       border: none;
+                                       font-family: 'Source Sans Pro', sans-serif;
+                                       color: #ffffff;
+                                       background-color: #343435;
+                                       padding: 20px 50px;
+                                       margin-top: 20px;
+                                       position: relative;
+                                       z-index: 2;
+                                       &:hover{
+                                           &::before{
+                                               height: 100%;
+                                           }
+                                       }
+                                       &::before{
+                                           content: '';
+                                           width: 100%;
+                                           height: 4px;
+                                           background: #CCA471;
+                                           position: absolute;
+                                           bottom: 0;
+                                           right: 0;
+                                           left: 0;
+                                           z-index: -10;
+                                           transition: 0.5s;
+                                       }
+                                   }
+                               }
+                           }
                     }
                 }
                 .availability{
@@ -184,58 +305,61 @@
                   display: flex;
                   align-items: center;
                   margin-top: 20px;
-                    input{
-                        position: absolute;
-                        opacity: 0;
-                        height: 0;
-                        width: 0;
-                        &:checked{
-                            + {
-                                label {
-                                    &:after {
-                                        opacity: 1; 
-                                    }
-                                }
-                            }
+               .inputStok{
+               
+                position: relative;
+                input{
+                    position: absolute;
+                    z-index: 2;
+                    left: -20px;
+                    top:10px;
+                    height: 70%;
+                    width: 70%;
+                    opacity: 0;
+                    &:checked+label {
+                        &:after {
+                            opacity: 1; 
                         }
-                   
                     }
-                    label{
+                }
+                label{
+                    position: relative;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-size: 22px;
+                    color: #AAAAAA;
+                    display: inline-block;
+                  
+                 
+                    &:before{
+                        content: '';
+                        -webkit-appearance: none;
+                        background-color: transparent;
+                        border: 2px solid #CCA471;
+                        padding: 13px;
+                        display: inline-block;
                         position: relative;
-                        font-family: 'Source Sans Pro', sans-serif;
-                        font-size: 22px;
-                        color: #AAAAAA;
-                      
-                     
-                        &:before{
-                            content: '';
-                            -webkit-appearance: none;
-                            background-color: transparent;
-                            border: 2px solid #CCA471;
-                            padding: 13px;
-                            display: inline-block;
-                            position: relative;
-                            vertical-align: middle;
-                            cursor: pointer;
-                            margin-right: 5px;
-                            margin-top: 0px;
-                            border-radius: 50%;
-                           } 
-                           &:after{
-                            content: '';
-                            opacity: 1;
-                            position: absolute;
-                            top: 6px;
-                            left: 11px;
-                            width: 8px;
-                            height: 18px;
-                            border: solid #cca471;
-                            border-width: 0 2px 2px 0;
-                            transform: rotate(45deg);
-                            box-shadow: 1px 1px 0px #030d1d;
-                           }
-                   
-                    }
+                        vertical-align: middle;
+                        cursor: pointer;
+                        margin-right: 5px;
+                        margin-top: 0px;
+                        border-radius: 50%;
+                       } 
+                       &:after{
+                        content: '';
+                        opacity: 0;
+                        position: absolute;
+                        top: 6px;
+                        left: 11px;
+                        width: 8px;
+                        height: 18px;
+                        border: solid #cca471;
+                        border-width: 0 2px 2px 0;
+                        transform: rotate(45deg);
+                        box-shadow: 1px 1px 0px #030d1d;
+                       }
+               
+                }
+               }
                     span{
                         position: absolute;
                         right: 0;
@@ -331,58 +455,62 @@
                     display: flex;
                     align-items: center;
                     margin-top: 20px;
-                      input{
-                          position: absolute;
-                          opacity: 0;
-                          height: 0;
-                          width: 0;
-                          &:checked{
-                              + {
-                                  label {
-                                      &:after {
-                                          opacity: 1; 
-                                      }
-                                  }
-                              }
-                          }
-                     
-                      }
-                      label{
-                          position: relative;
-                          font-family: 'Source Sans Pro', sans-serif;
-                          font-size: 22px;
-                          color: #AAAAAA;
-                        
+                    .TypeInput{
+               
+                        position: relative;
+                        input{
+                            position: absolute;
+                            z-index: 2;
+                            left: -20px;
+                            top:10px;
+                            height: 70%;
+                            width: 70%;
+                            opacity: 0;
+                            &:checked+label {
+                                &:after {
+                                    opacity: 1; 
+                                }
+                            }
+                        }
+                        label{
+                            position: relative;
+                            font-family: 'Source Sans Pro', sans-serif;
+                            font-size: 22px;
+                            color: #AAAAAA;
+                            display: inline-block;
+                          
+                         
+                            &:before{
+                                content: '';
+                                -webkit-appearance: none;
+                                background-color: transparent;
+                                border: 2px solid #CCA471;
+                                padding: 13px;
+                                display: inline-block;
+                                position: relative;
+                                vertical-align: middle;
+                                cursor: pointer;
+                                margin-right: 5px;
+                                margin-top: 0px;
+                                border-radius: 50%;
+                               } 
+                               &:after{
+                                content: '';
+                                opacity: 0;
+                                position: absolute;
+                                top: 6px;
+                                left: 11px;
+                                width: 8px;
+                                height: 18px;
+                                border: solid #cca471;
+                                border-width: 0 2px 2px 0;
+                                transform: rotate(45deg);
+                                box-shadow: 1px 1px 0px #030d1d;
+                               }
                        
-                          &:before{
-                              content: '';
-                              -webkit-appearance: none;
-                              background-color: transparent;
-                              border: 2px solid #CCA471;
-                              padding: 13px;
-                              display: inline-block;
-                              position: relative;
-                              vertical-align: middle;
-                              cursor: pointer;
-                              margin-right: 5px;
-                              margin-top: 0px;
-                              border-radius: 50%;
-                             } 
-                             &:after{
-                              content: '';
-                              opacity: 1;
-                              position: absolute;
-                              top: 6px;
-                              left: 11px;
-                              width: 8px;
-                              height: 18px;
-                              border: solid #cca471;
-                              border-width: 0 2px 2px 0;
-                              transform: rotate(45deg);
-                              box-shadow: 1px 1px 0px #030d1d;
-                             }
-                     
-                      }
+                        }
+                       }
+                 
                       span{
                           position: absolute;
                           right: 0;
@@ -420,58 +548,62 @@
                     display: flex;
                     align-items: center;
                     margin-top: 20px;
-                      input{
-                          position: absolute;
-                          opacity: 0;
-                          height: 0;
-                          width: 0;
-                          &:checked{
-                              + {
-                                  label {
-                                      &:after {
-                                          opacity: 1; 
-                                      }
-                                  }
-                              }
-                          }
-                     
-                      }
-                      label{
-                          position: relative;
-                          font-family: 'Source Sans Pro', sans-serif;
-                          font-size: 22px;
-                          color: #AAAAAA;
-                        
+                   
+                      .BrandInput{
+               
+                        position: relative;
+                        input{
+                            position: absolute;
+                            z-index: 2;
+                            left: -20px;
+                            top:10px;
+                            height: 70%;
+                            width: 70%;
+                            opacity: 0;
+                            &:checked+label {
+                                &:after {
+                                    opacity: 1; 
+                                }
+                            }
+                        }
+                        label{
+                            position: relative;
+                            font-family: 'Source Sans Pro', sans-serif;
+                            font-size: 22px;
+                            color: #AAAAAA;
+                            display: inline-block;
+                          
+                         
+                            &:before{
+                                content: '';
+                                -webkit-appearance: none;
+                                background-color: transparent;
+                                border: 2px solid #CCA471;
+                                padding: 13px;
+                                display: inline-block;
+                                position: relative;
+                                vertical-align: middle;
+                                cursor: pointer;
+                                margin-right: 5px;
+                                margin-top: 0px;
+                                border-radius: 50%;
+                               } 
+                               &:after{
+                                content: '';
+                                opacity: 0;
+                                position: absolute;
+                                top: 6px;
+                                left: 11px;
+                                width: 8px;
+                                height: 18px;
+                                border: solid #cca471;
+                                border-width: 0 2px 2px 0;
+                                transform: rotate(45deg);
+                                box-shadow: 1px 1px 0px #030d1d;
+                               }
                        
-                          &:before{
-                              content: '';
-                              -webkit-appearance: none;
-                              background-color: transparent;
-                              border: 2px solid #CCA471;
-                              padding: 13px;
-                              display: inline-block;
-                              position: relative;
-                              vertical-align: middle;
-                              cursor: pointer;
-                              margin-right: 5px;
-                              margin-top: 0px;
-                              border-radius: 50%;
-                             } 
-                             &:after{
-                              content: '';
-                              opacity: 1;
-                              position: absolute;
-                              top: 6px;
-                              left: 11px;
-                              width: 8px;
-                              height: 18px;
-                              border: solid #cca471;
-                              border-width: 0 2px 2px 0;
-                              transform: rotate(45deg);
-                              box-shadow: 1px 1px 0px #030d1d;
-                             }
-                     
-                      }
+                        }
+                       }
                       span{
                           position: absolute;
                           right: 0;
@@ -521,76 +653,176 @@
                         .col-lg-3{
                             margin-top: 60px;
                             .product-single{
+                                &:hover{
+                                   .pro-content{
+                                       h4{
+                                           a{
+                                               color: #CCA471;
+                                           }
+                                         
+                                       }
+                                   }
+                                }
                                 width: 90%;
-                                     .pro-img{
-                                      width: 100%;
-                                      position: relative;
-                                      z-index: 1;
-                                     
-                                      a{
-                                          .overlay{
-                                      position: absolute;
-                                      background-color: #34353a;
-                                       z-index: -1;
-                                        height: 68%;
-                                        width: 100%;
-                                          }
-                                          img{
-                                              width: 100%;
-                                          }
-                                      }
-                                     }
-                                      .pro-content{
-                                          text-align: center;
-                                          h4{
-                                              
-                                              a{
-                                                  
-                                                  text-decoration: none;
-                                                  font-family: 'Playfair Display', serif;
-                                                  color:#fff;
-                                                  font-size: 25px;
-                                              }
-                                          }
-                                          .prc{
-                                              color:#AAAAAA;
-                                              font-size: 25px;
-                                              font-weight: 600;
-                                              font-family: 'Source Sans Pro', sans-serif;
-                                          }
-                                          .range{
-                                              i{
-                                                  color: #fcc43e;
-                                                  font-size: 14px;
-                                              }
-                                          }
-                                          .title{
-                                              font-size: 20px;
-                                              color:#AAAAAA;
-                                              font-family: 'Source Sans Pro', sans-serif;
-                                          }
-                                          button{
-                                              text-transform: uppercase;
-                                              font-size: 20px;
-                                              font-family: 'Source Sans Pro', sans-serif;
-                                              color: #ffffff;
-                                              background-color: #343435;
-                                              padding: 10px 40px;
-                                              position: relative;
-                                              &::before{
-                                                  content: '';
-                                                  width: 100%;
-                                                  height: 4px;
-                                                  background: #CCA471;
-                                                  position: absolute;
-                                                  bottom: 0;
-                                                  right: 0;
-                                                  left: 0;
-                                                  z-index: 11;
-                                              }
-                                          }
-                                      }
+                                  .pro-img{
+                                   width: 100%;
+                                   position: relative;
+                                   z-index: 1;
+                                   margin-bottom: 20px;
+                                   &:hover{
+                                       .Smallside{
+                                          opacity: 1; 
+                                       }
+                                       .overlay{
+                                           height: 100% !important;
+                                           background-color: #505155;
+                                       }
+                                      
+                                   }
+                                  .Smallside{
+                                   display: flex;
+                                   flex-direction: column !important;
+                                   position: absolute;
+                                   gap: 10px;
+                                   right: 10px;
+                                   top: 20%;
+                                   opacity: 0;
+                                   transition: 0.5s;
+                                   a{
+                                      
+                                       
+                                       i{
+                                           color: #ffff;
+                                           font-size: 20px;
+                                           background-color: #343535;
+                                           padding: 15PX;
+                                           transition: 0.5s;
+                                           &:hover{
+                                               background-color: #CCA471;
+                                           }
+                                       }
+                                   }
                                   }
+                                  .sale{
+                                   span{
+                                       font-size: 16px;
+                                       font-family: 'Source Sans Pro', sans-serif;
+                                       color: #ffff;
+                                       background-color: #343435;
+                                       padding: 5px 10px;
+                                       position: absolute;
+                                       left: 10px;
+                                       top: 10px;
+                                   }
+                                  }
+                                  .save{
+                                   span{
+                                       font-size: 16px;
+                                       font-family: 'Source Sans Pro', sans-serif;
+                                       color: #ffff;
+                                       background-color: #343435;
+                                       padding: 5px 10px;
+                                       position: absolute;
+                                       right: 10px;
+                                       top: 10px;
+                                   }
+                                  }
+                                   a{
+                                      
+                                       .overlay{
+                                   position: absolute;
+                                   background-color: #34353a;
+                                    z-index: -1;
+                                     height: 68%;
+                                     width: 100%;
+                                     transition: 0.5s;
+                                    
+                                       }
+                                       img{
+                                           width: 100%;
+                                       }
+                                   }
+                                  }
+                                   .pro-content{
+                                       text-align: center;
+                                       h4{
+                                          
+                                           a{
+                                               
+                                               text-decoration: none;
+                                               font-family: 'Playfair Display', serif;
+                                               color:#fff;
+                                               font-size: 25px;
+                                           }
+                                       }
+                                       .pricee{
+                                           display: flex;
+                                           justify-content: center;
+                                           align-items: center;
+                                           gap: 10px;
+                                           
+                                           .prc{
+                                           
+                                               color:#AAAAAA;
+                                           
+                                               font-size: 28px;
+                                               font-weight: 600;
+                                               font-family: 'Source Sans Pro', sans-serif;
+                                           }
+                                           .oldprc{
+                                               color:#AAAAAA;
+                                               text-decoration: line-through;
+                                               font-size: 22px;
+                                               
+                                               font-family: 'Source Sans Pro', sans-serif;
+                                           }
+                                       }
+                                       .range{
+                                           margin: 10px 0;
+                                           i{
+                                               color: #fcc43e;
+                                               font-size: 18px;
+                                           }
+                                       }
+                
+                                       .title{
+                                           
+                                           font-size: 20px;
+                                           color:#AAAAAA;
+                   
+                                           font-family: 'Source Sans Pro', sans-serif;
+                                       }
+                                       button{
+                                           text-transform: uppercase;
+                                           font-size: 20px;
+                                           border: none;
+                                           font-family: 'Source Sans Pro', sans-serif;
+                                           color: #ffffff;
+                                           background-color: #343435;
+                                           padding: 20px 50px;
+                                           margin-top: 20px;
+                                           position: relative;
+                                           z-index: 2;
+                                           &:hover{
+                                               &::before{
+                                                   height: 100%;
+                                               }
+                                           }
+                                           &::before{
+                                               content: '';
+                                               width: 100%;
+                                               height: 4px;
+                                               background: #CCA471;
+                                               position: absolute;
+                                               bottom: 0;
+                                               right: 0;
+                                               left: 0;
+                                               z-index: -10;
+                                               transition: 0.5s;
+                                           }
+                                       }
+                                   }
+                               }
                         }
                     }
                 }

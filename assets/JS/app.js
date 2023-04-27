@@ -70,3 +70,9 @@ function openReview(evt, ProductName) {
   evt.currentTarget.className += " active";
 }
 
+const myModal = document.getElementById('Modall')
+const myInput = document.getElementById('OpenModall')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})

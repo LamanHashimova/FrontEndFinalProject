@@ -165,11 +165,63 @@
 #Detail .container-fluid .row .col-lg-3 .LeftDetail .Arrivals .ArrivalSlider .product-single {
   margin-top: 30px;
   width: 100%;
+  width: 90%;
+}
+#Detail .container-fluid .row .col-lg-3 .LeftDetail .Arrivals .ArrivalSlider .product-single:hover .pro-content h4 a {
+  color: #CCA471;
 }
 #Detail .container-fluid .row .col-lg-3 .LeftDetail .Arrivals .ArrivalSlider .product-single .pro-img {
   width: 100%;
   position: relative;
   z-index: 1;
+  margin-bottom: 20px;
+}
+#Detail .container-fluid .row .col-lg-3 .LeftDetail .Arrivals .ArrivalSlider .product-single .pro-img:hover .Smallside {
+  opacity: 1;
+}
+#Detail .container-fluid .row .col-lg-3 .LeftDetail .Arrivals .ArrivalSlider .product-single .pro-img:hover .overlay {
+  height: 100% !important;
+  background-color: #505155;
+}
+#Detail .container-fluid .row .col-lg-3 .LeftDetail .Arrivals .ArrivalSlider .product-single .pro-img .Smallside {
+  display: flex;
+  flex-direction: column !important;
+  position: absolute;
+  gap: 10px;
+  right: 10px;
+  top: 20%;
+  opacity: 0;
+  transition: 0.5s;
+}
+#Detail .container-fluid .row .col-lg-3 .LeftDetail .Arrivals .ArrivalSlider .product-single .pro-img .Smallside a i {
+  color: white;
+  font-size: 20px;
+  background-color: #343535;
+  padding: 15PX;
+  transition: 0.5s;
+}
+#Detail .container-fluid .row .col-lg-3 .LeftDetail .Arrivals .ArrivalSlider .product-single .pro-img .Smallside a i:hover {
+  background-color: #CCA471;
+}
+#Detail .container-fluid .row .col-lg-3 .LeftDetail .Arrivals .ArrivalSlider .product-single .pro-img .sale span {
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  background-color: #343435;
+  padding: 5px 10px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+#Detail .container-fluid .row .col-lg-3 .LeftDetail .Arrivals .ArrivalSlider .product-single .pro-img .save span {
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  background-color: #343435;
+  padding: 5px 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 #Detail .container-fluid .row .col-lg-3 .LeftDetail .Arrivals .ArrivalSlider .product-single .pro-img a .overlay {
   position: absolute;
@@ -177,6 +229,7 @@
   z-index: -1;
   height: 68%;
   width: 100%;
+  transition: 0.5s;
 }
 #Detail .container-fluid .row .col-lg-3 .LeftDetail .Arrivals .ArrivalSlider .product-single .pro-img a img {
   width: 100%;
@@ -190,10 +243,22 @@
   color: #fff;
   font-size: 25px;
 }
-#Detail .container-fluid .row .col-lg-3 .LeftDetail .Arrivals .ArrivalSlider .product-single .pro-content .prc {
+#Detail .container-fluid .row .col-lg-3 .LeftDetail .Arrivals .ArrivalSlider .product-single .pro-content .pricee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#Detail .container-fluid .row .col-lg-3 .LeftDetail .Arrivals .ArrivalSlider .product-single .pro-content .pricee .prc {
   color: #AAAAAA;
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 600;
+  font-family: "Source Sans Pro", sans-serif;
+}
+#Detail .container-fluid .row .col-lg-3 .LeftDetail .Arrivals .ArrivalSlider .product-single .pro-content .pricee .oldprc {
+  color: #AAAAAA;
+  text-decoration: line-through;
+  font-size: 22px;
   font-family: "Source Sans Pro", sans-serif;
 }
 #Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainImgs .SingleMainImg img {
@@ -249,8 +314,14 @@
   display: flex;
   gap: 20px;
 }
+#Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainInfo .ProductSize .Sizes .singlesize {
+  position: relative;
+}
 #Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainInfo .ProductSize .Sizes .singlesize input {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 #Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainInfo .ProductSize .Sizes .singlesize input:checked + label {
   border-color: #CCA471;
@@ -278,11 +349,30 @@
   display: flex;
   gap: 20px;
 }
-#Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainInfo .ProductColor .Colors .singleColor label {
-  width: 20%;
+#Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainInfo .ProductColor .Colors .singleColor {
+  margin-left: 5px;
+  width: 50px;
+  height: 50px;
   position: relative;
 }
+#Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainInfo .ProductColor .Colors .singleColor input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+#Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainInfo .ProductColor .Colors .singleColor input:checked + label i {
+  box-shadow: 0 0 5px 5px yellow;
+  padding: 10px;
+}
+#Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainInfo .ProductColor .Colors .singleColor label {
+  position: absolute;
+  width: 20%;
+}
 #Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainInfo .ProductColor .Colors .singleColor label i {
+  height: 40px;
+  width: 40px;
   background-color: palevioletred;
   display: block;
   position: absolute;
@@ -292,7 +382,6 @@
   bottom: 3px;
   left: 3px;
   right: 3px;
-  border-color: var(--DTColor_Border) !important;
 }
 #Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainInfo .ProductMaterial {
   display: flex;
@@ -309,8 +398,14 @@
   display: flex;
   gap: 20px;
 }
+#Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainInfo .ProductMaterial .Materials .singlematerial {
+  position: relative;
+}
 #Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainInfo .ProductMaterial .Materials .singlematerial input {
-  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }
 #Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainInfo .ProductMaterial .Materials .singlematerial input:checked + label {
   border-color: #CCA471;
@@ -412,6 +507,10 @@
   background-color: #343435;
   padding: 15px 40px;
   position: relative;
+  z-index: 2;
+}
+#Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainInfo .buy button:hover::before {
+  height: 100%;
 }
 #Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainInfo .buy button::before {
   content: "";
@@ -422,7 +521,8 @@
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 11;
+  z-index: -10;
+  transition: 0.5s;
 }
 #Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainInfo .buy a {
   text-transform: uppercase;
@@ -432,7 +532,11 @@
   background-color: #343435;
   padding: 20px 40px;
   position: relative;
+  z-index: 2;
   text-decoration: none;
+}
+#Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainInfo .buy a:hover::before {
+  height: 100%;
 }
 #Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainInfo .buy a::before {
   content: "";
@@ -443,7 +547,8 @@
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 11;
+  transition: 0.5s;
+  z-index: -10;
 }
 #Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainInfo .wishlist button {
   outline: none;
@@ -454,7 +559,11 @@
   color: #ffffff;
   background-color: #343435;
   padding: 15px 40px;
+  z-index: 2;
   position: relative;
+}
+#Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainInfo .wishlist button:hover::before {
+  height: 100%;
 }
 #Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainInfo .wishlist button::before {
   content: "";
@@ -465,7 +574,8 @@
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 11;
+  z-index: -10;
+  transition: 0.5s;
 }
 #Detail .container-fluid .row .col-lg-9 .DetailAll .Review .tabmenu .tab .tablinks {
   text-transform: uppercase;
