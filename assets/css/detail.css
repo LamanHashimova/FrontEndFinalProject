@@ -113,6 +113,7 @@
   color: #AAAAAA;
   font-size: 22px;
   box-shadow: none;
+  padding-left: 0;
   font-family: "Source Sans Pro", sans-serif;
 }
 #Detail .container-fluid .row .col-lg-3 .LeftDetail .Category .accordion .accordion-item .accordion-header .accordion-button:focus {
@@ -269,7 +270,7 @@
   display: flex;
 }
 #Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainImgs .SliderMainImgs .SinglesliderImg {
-  width: 30%;
+  width: 100%;
 }
 #Detail .container-fluid .row .col-lg-9 .DetailAll .row .col-lg-6 .MainImgs .SliderMainImgs .SinglesliderImg img {
   width: 100%;
@@ -586,6 +587,10 @@
   background-color: #343435;
   padding: 20px 40px;
   position: relative;
+  z-index: 2;
+}
+#Detail .container-fluid .row .col-lg-9 .DetailAll .Review .tabmenu .tab .tablinks:hover::before {
+  height: 100%;
 }
 #Detail .container-fluid .row .col-lg-9 .DetailAll .Review .tabmenu .tab .tablinks::before {
   content: "";
@@ -596,7 +601,8 @@
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 11;
+  transition: 0.5s;
+  z-index: -10;
 }
 #Detail .container-fluid .row .col-lg-9 .DetailAll .Review .tabmenu .tabcontent {
   display: none;
@@ -676,6 +682,23 @@
   border: none;
   background-color: #343435;
   padding: 20px 50px;
+  position: relative;
+  z-index: 2;
+}
+#Detail .container-fluid .row .col-lg-9 .DetailAll .Review .tabmenu #REVIEWS .WriteReview .based a:hover::before {
+  height: 100%;
+}
+#Detail .container-fluid .row .col-lg-9 .DetailAll .Review .tabmenu #REVIEWS .WriteReview .based a::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: #CCA471;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: 0.5s;
+  z-index: -10;
 }
 #Detail .container-fluid .row .col-lg-9 .DetailAll .Review .tabmenu #REVIEWS .ReadReview {
   border-top: 1px solid #212a38;

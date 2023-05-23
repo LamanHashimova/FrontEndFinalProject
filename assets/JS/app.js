@@ -70,9 +70,24 @@ function openReview(evt, ProductName) {
   evt.currentTarget.className += " active";
 }
 
-const myModal = document.getElementById('Modall')
-const myInput = document.getElementById('OpenModall')
+// const myModal = document.getElementById('Modall')
+// const myInput = document.getElementById('OpenModall')
 
-myModal.addEventListener('shown.bs.modal', () => {
-  myInput.focus()
+// myModal.addEventListener('shown.bs.modal', () => {
+//   myInput.focus()
+// })
+
+const addToBasketButton = document.getElementById('add-to-basket');
+const basketSidebar = document.getElementById('basket-sidebar');
+const closeSidebar = document.querySelector('.close');
+
+addToBasketButton.addEventListener('click', () => {
+  // Code to add the product to the basket
+
+  // Show the sidebar when the product is added
+  basketSidebar.style.width = '20%';
+
+});
+closeSidebar.addEventListener('click',()=>{
+  basketSidebar.style.width = '0%';
 })

@@ -92,6 +92,14 @@
   border: 1px solid #212a38;
   padding: 50px 30px;
   text-align: center;
+  transition: 0.3s;
+}
+#ContactInfo .container .row .col-lg-4 .SingleContactInfo:hover {
+  border-color: #CCA471;
+  cursor: pointer;
+}
+#ContactInfo .container .row .col-lg-4 .SingleContactInfo:hover h4 {
+  color: #CCA471;
 }
 #ContactInfo .container .row .col-lg-4 .SingleContactInfo .icon {
   margin-bottom: 30px;
@@ -107,12 +115,17 @@
   font-size: 25px;
   color: #fff;
   margin-bottom: 30px;
+  transition: 0.3s;
 }
 #ContactInfo .container .row .col-lg-4 .SingleContactInfo .MainInfo p {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 23px;
   color: #AAAAAA;
   line-height: 40px;
+  transition: 0.3s;
+}
+#ContactInfo .container .row .col-lg-4 .SingleContactInfo .MainInfo p:hover {
+  color: #CCA471;
 }
 
 #ContactForm {
@@ -140,6 +153,9 @@
   font-size: 20px;
   color: #AAAAAA;
 }
+#ContactForm .container .ContactFormAll form .inputs input:focus {
+  border-color: #CCA471;
+}
 #ContactForm .container .ContactFormAll form textarea {
   border: 1px solid #212a38;
   outline: none;
@@ -148,6 +164,9 @@
   width: 100%;
   font-size: 20px;
   color: #AAAAAA;
+}
+#ContactForm .container .ContactFormAll form textarea:focus {
+  border-color: #CCA471;
 }
 #ContactForm .container .ContactFormAll form .submit {
   text-align: center;
@@ -164,6 +183,10 @@
   border: none;
   position: relative;
   width: 30%;
+  z-index: 2;
+}
+#ContactForm .container .ContactFormAll form .submit button:hover::before {
+  height: 100%;
 }
 #ContactForm .container .ContactFormAll form .submit button::before {
   content: "";
@@ -174,7 +197,8 @@
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 11;
+  transition: 0.5s;
+  z-index: -10;
 }
 
 #Footer {

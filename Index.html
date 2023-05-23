@@ -43,7 +43,9 @@
            <div class="col-lg-4">
             <div class="site-header">
                <a href="#"> <i class="fa-solid fa-user-large"></i></a>
-               <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+               <a href="#"><i class="fa-solid fa-bag-shopping"></i>
+            <span class="basketNumber">7</span>
+            </a>
                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
 
             </div>
@@ -149,7 +151,7 @@
                                         <img src="assets/Images/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_600x.webp" alt="">
                                     </a>
                                     <div class="Smallside">
-                                        <a href="#"><i class="fa-solid fa-window-restore"></i></a>
+                                        <a id="add-to-basket" href="#"><i class="fa-solid fa-window-restore"></i></a>
                                         <a href="#"><i class="fa-solid fa-heart"></i></a>
                                         <a id="OpenModall" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                                     </div>
@@ -159,7 +161,7 @@
                                     <div class="save">
                                         <span>Save <b>20%</b></span>
                                     </div>
-                                </div>
+                                </div>                 
                                 <div class="pro-content">
                                     <h4><a href="#">Analog Numeral</a></h4>
                                     <div class="pricee">
@@ -1036,32 +1038,7 @@
         </div>
     </section>
 
-    <section id="Time">
-        <div class="Bodytime">
-            <h2>Most wanted of the year</h2>
-            <div class="timeclock">
-                <div id="defaultCountdown"></div>
 
-                <!-- <div class="singleclock">
-                    <p class="m-0 tm">273</p>
-                    <span>Days</span>
-                </div>
-                <div class="singleclock">
-                    <p class="m-0 tm">07</p>
-                    <span>Hrs</span>
-                </div>
-                <div class="singleclock">
-                    <p class="m-0 tm">35</p>
-                    <span>Mins</span>
-                </div>
-                <div class="singleclock">
-                    <p class="m-0 tm">57</p>
-                    <span>Secs</span>
-                </div> -->
-
-            </div>
-        </div>
-    </section>
 
     <section id="RomanNumeral">
         <div class="RomanBody">
@@ -1159,10 +1136,10 @@
                     <button class="tabLinksProduct" onclick="openProductCategory(event, 'DIALER')">DIALER</button>
                   </div>
                   
-                  <!-- Tab content -->
+               
                   <div id="CLASSICO" class="tabContentProduct active-tab">
                     <div class="row">                      
-                          <!-- <div class="owl-carousel"> -->
+                    
                           <div class="col-lg">
                             <div class="productCategory-single">
                                 <div class="proCate-img">
@@ -1229,7 +1206,7 @@
                         </div>
                        </div>
                            
-                          <!-- </div> -->
+                      
                       
                       </div>
               
@@ -1237,7 +1214,7 @@
                   
                   <div id="EXECUTIVE" class="tabContentProduct">
                     <div class="row">                      
-                        <!-- <div class="owl-carousel"> -->
+                       
                         <div class="col-lg">
                           <div class="productCategory-single">
                               <div class="proCate-img">
@@ -1304,14 +1281,14 @@
                       </div>
                      </div>
                          
-                        <!-- </div> -->
+                  
                     
                     </div>
              </div>
                   
                   <div id="SPORTS" class="tabContentProduct">
                     <div class="row">                      
-                        <!-- <div class="owl-carousel"> -->
+                    
                         <div class="col-lg">
                           <div class="productCategory-single">
                               <div class="proCate-img">
@@ -1378,7 +1355,7 @@
                       </div>
                      </div>
                          
-                        <!-- </div> -->
+                     
                     
                     </div>
                   </div>
@@ -1508,7 +1485,56 @@
             </div>
         </div>
     </section>
-
+    <div class="sidebar" id="basket-sidebar">
+       <div class="headerside">
+        <h4>Your Cart</h4>
+        <div class="close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+       </div>
+       <div class="SingleSideCart">
+        <div class="SideImg">
+            <img src="/assets/Images/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_medium.avif" alt="">
+        </div>
+        <div class="SideContent">
+            <a href="#"><h6>Analog Numeral</h6></a>
+            <p class="mb-0">white</p>
+          <span class="money">$3,000.00</span>
+          <div class="quantity">
+            <input  class=" qty" type="button" value="-">
+            <input class="qtytext" type="text" value="1" >
+            <input class="qty" type="button" value="+">
+        </div>
+        </div>
+       </div>
+       <div class="SingleSideCart">
+        <div class="SideImg">
+            <img src="/assets/Images/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_medium.avif" alt="">
+           
+        </div>
+        <div class="SideContent">
+            <a href="#"><h6>Analog Numeral</h6></a>
+            <p class="mb-0">white</p>
+          <span class="money">$3,000.00</span>
+          <div class="quantity">
+            <input  class=" qty" type="button" value="-">
+            <input class="qtytext" type="text" value="1" >
+            <input class="qty" type="button" value="+">
+        </div>
+        </div>
+       </div>
+       <hr>
+       <div class="Total">
+        <p class="mb-0 subtotal">Total </p>
+        <span class="subtotal"> $3,000.00</span>
+       </div>
+       <hr>
+       <div class="GotoCheckout">
+        <a href="#">Proceed to Checkout </a>
+        <a href="#">View Cart  </a>
+       </div>
+      
+      </div>
 </main>
 
 <footer id="Footer">

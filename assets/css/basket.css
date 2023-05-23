@@ -214,6 +214,10 @@
   background-color: #343435;
   padding: 20px 40px;
   position: relative;
+  z-index: 2;
+}
+#Basket .container .basketAll .shipping-section .ordersummary .checkout button:hover::before {
+  height: 100%;
 }
 #Basket .container .basketAll .shipping-section .ordersummary .checkout button::before {
   content: "";
@@ -224,7 +228,8 @@
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 11;
+  transition: 0.5s;
+  z-index: -10;
 }
 #Basket .container .basketAll .shipping-section .ordersummary .shipping .shippingbutton {
   margin-bottom: 20px;
@@ -236,6 +241,10 @@
   background-color: #343435;
   padding: 20px 40px;
   position: relative;
+  z-index: 2;
+}
+#Basket .container .basketAll .shipping-section .ordersummary .shipping .shippingbutton:hover::before {
+  height: 100%;
 }
 #Basket .container .basketAll .shipping-section .ordersummary .shipping .shippingbutton::before {
   content: "";
@@ -246,7 +255,8 @@
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 11;
+  transition: 0.5s;
+  z-index: -10;
 }
 #Basket .container .basketAll .shipping-section .ordersummary .shipping .shippingbutton i {
   margin-left: 10px;

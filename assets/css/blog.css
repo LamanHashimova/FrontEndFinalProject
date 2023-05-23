@@ -105,6 +105,9 @@
   display: flex;
   gap: 20px;
 }
+#Blog .container .row .col-lg-3 .Leftsidebar .Articles .SingleArticle:hover .ArticleInfo a {
+  color: #CCA471;
+}
 #Blog .container .row .col-lg-3 .Leftsidebar .Articles .SingleArticle .ArticleImage img {
   width: 100%;
   -o-object-fit: cover;
@@ -112,6 +115,7 @@
   height: 80%;
 }
 #Blog .container .row .col-lg-3 .Leftsidebar .Articles .SingleArticle .ArticleInfo a {
+  transition: 0.3s;
   text-decoration: none;
   color: #AAAAAA;
   font-size: 22px;
@@ -150,14 +154,21 @@
   list-style: none;
   line-height: 40px;
 }
+#Blog .container .row .col-lg-3 .Leftsidebar .Tags ul li:hover a {
+  color: #CCA471;
+}
 #Blog .container .row .col-lg-3 .Leftsidebar .Tags ul li a {
   text-decoration: none;
   color: #AAAAAA;
   font-size: 22px;
+  transition: 0.3s;
   font-family: "Source Sans Pro", sans-serif;
 }
 #Blog .container .row .col-lg-9 .RightSidebar .RightContent .row .col-lg-6 .SingleRightContent {
   display: grid;
+}
+#Blog .container .row .col-lg-9 .RightSidebar .RightContent .row .col-lg-6 .SingleRightContent:hover .RightInfo .title {
+  color: #CCA471;
 }
 #Blog .container .row .col-lg-9 .RightSidebar .RightContent .row .col-lg-6 .SingleRightContent .RightImage img {
   width: 100%;
@@ -183,6 +194,7 @@
   font-family: "Playfair Display", serif;
   color: #fff;
   display: inline-block;
+  transition: 0.3s;
 }
 #Blog .container .row .col-lg-9 .RightSidebar .RightContent .row .col-lg-6 .SingleRightContent .RightInfo .readmore {
   text-decoration: none;
@@ -194,6 +206,10 @@
   padding: 20px 50px;
   position: relative;
   display: inline-block;
+  z-index: 2;
+}
+#Blog .container .row .col-lg-9 .RightSidebar .RightContent .row .col-lg-6 .SingleRightContent .RightInfo .readmore:hover::before {
+  height: 100%;
 }
 #Blog .container .row .col-lg-9 .RightSidebar .RightContent .row .col-lg-6 .SingleRightContent .RightInfo .readmore::before {
   content: "";
@@ -204,7 +220,8 @@
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 11;
+  z-index: -10;
+  transition: 0.5s;
 }
 
 #Footer {

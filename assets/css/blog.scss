@@ -90,6 +90,7 @@
         .col-lg-3{
             .Leftsidebar{
                 .Articles{
+                  
                     h5{
                         color: #ffffff;
                         text-align: left;
@@ -98,6 +99,7 @@
                         font-size: 30px;
                         position: relative;
                         margin-bottom: 30PX;
+                      
                         &::before{
                             content: '';
                             width: 100%;
@@ -111,6 +113,13 @@
                         }
                     }
                     .SingleArticle{
+                        &:hover{
+                            .ArticleInfo{
+                               a{
+                                color: #CCA471;
+                               }
+                            }
+                        }
                         display: flex;
                         gap: 20px;
                         .ArticleImage{
@@ -122,6 +131,7 @@
                         }
                         .ArticleInfo{
                             a{
+                                transition: 0.3s;
                                 text-decoration: none;
                                 color: #AAAAAA;
                                 font-size: 22px;
@@ -161,10 +171,16 @@
                         li{
                             list-style: none;
                             line-height: 40px;
+                            &:hover{
+                             a{
+                                color: #CCA471;
+                             }
+                            }
                             a{
                                 text-decoration: none;
                                 color: #AAAAAA;
                                 font-size: 22px;
+                                transition: 0.3s;
                                 font-family: 'Source Sans Pro', sans-serif;
                             }
                         }
@@ -179,7 +195,13 @@
                         .col-lg-6{
                             .SingleRightContent{
                                 display: grid;
-                                
+                                &:hover{
+                                    .RightInfo{
+                                        .title{
+                                            color: #CCA471;
+                                        }
+                                    }
+                                }
                                 .RightImage{
                                    
                                     img{
@@ -208,6 +230,7 @@
                                         font-family: 'Playfair Display', serif;
                                         color: #fff;
                                         display: inline-block;
+                                        transition: 0.3s;
                                        
                                       
 
@@ -222,7 +245,12 @@
                                               padding: 20px 50px;
                                               position: relative;
                                               display: inline-block;
-                                             
+                                              z-index: 2;
+                                             &:hover{
+                                                &::before{
+                                                    height: 100%;
+                                                }
+                                             }
                                               &::before{
                                                   content: '';
                                                   width: 100%;
@@ -232,7 +260,8 @@
                                                   bottom: 0;
                                                   right: 0;
                                                   left: 0;
-                                                  z-index: 11;
+                                                  z-index: -10;
+                                                  transition: 0.5s;
                                               }
                                     }
                                 }

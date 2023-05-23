@@ -141,7 +141,7 @@
 }
 #journey .container h2::before {
   content: "";
-  width: 110%;
+  width: 105%;
   height: 5px;
   background: #CCA471;
   position: absolute;
@@ -200,6 +200,17 @@
   color: #fff;
   position: relative;
   margin-bottom: 30px;
+  position: relative;
+}
+#journey .container .row .col-lg-4 .singleaboutbox .BasicInfo h5::before {
+  bottom: -20px;
+  left: 40%;
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 3px;
+  transition: 0.5s;
+  background-color: #CCA471;
 }
 #journey .container .row .col-lg-4 .singleaboutbox .BasicInfo p {
   font-size: 22px;
@@ -220,11 +231,13 @@
   display: inline-block;
 }
 #giveup .container-fluid .row .col-lg-6 .Description {
-  width: 90%;
+  padding-left: 30px;
+  width: 100%;
 }
 #giveup .container-fluid .row .col-lg-6 .Description h4 {
   color: #ffffff;
   text-align: left;
+  padding-left: 40px;
   cursor: -webkit-grab;
   cursor: grab;
   font-family: "Playfair Display", serif;
@@ -235,7 +248,7 @@
 }
 #giveup .container-fluid .row .col-lg-6 .Description h4::before {
   content: "";
-  width: 110%;
+  width: 105%;
   height: 5px;
   background: #CCA471;
   position: absolute;
@@ -268,7 +281,7 @@
 }
 #giveup .container-fluid .row .col-lg-6 .Description .row .col-lg-6 .allcontent .supportcontent p {
   color: #AAAAAA;
-  font-size: 25PX;
+  font-size: 26PX;
   font-family: "Source Sans Pro", sans-serif;
   line-height: 40px;
 }
@@ -307,6 +320,9 @@
   line-height: 40px;
   margin-bottom: 40px;
 }
+#Team .container .teamAll .row .col-lg-3 .singleTeam:hover .AboutTeam h4 {
+  color: #CCA471;
+}
 #Team .container .teamAll .row .col-lg-3 .singleTeam .Profile {
   position: relative;
 }
@@ -319,6 +335,7 @@
   z-index: -1;
 }
 #Team .container .teamAll .row .col-lg-3 .singleTeam .Profile .sosialMedia {
+  right: 20px;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -333,8 +350,14 @@
   color: #ffffff;
   font-size: 16px;
   padding: 20px;
+  transition: 0.5s;
+}
+#Team .container .teamAll .row .col-lg-3 .singleTeam .Profile .sosialMedia i:hover {
+  cursor: pointer;
+  background-color: #CCA471;
 }
 #Team .container .teamAll .row .col-lg-3 .singleTeam .AboutTeam h4 {
+  transition: 0.3s;
   margin: 20px 0;
   font-family: "Playfair Display", serif;
   font-size: 25px;

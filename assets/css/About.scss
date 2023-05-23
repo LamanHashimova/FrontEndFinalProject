@@ -156,7 +156,7 @@
             margin-bottom: 50px;
             &::before{
                 content: '';
-                width: 110%;
+                width: 105%;
                 height: 5px;
                 background: #CCA471;
                 position: absolute;
@@ -216,12 +216,26 @@
                         }
                     }
                     .BasicInfo{
+                   
                         h5{
                             font-size: 28px;
                             font-family: 'Playfair Display', serif;
                             color: #fff;
                             position: relative;
                             margin-bottom: 30px;
+                           
+                            position: relative;
+                          
+                            &::before{
+                                bottom: -20px;
+                                left: 40%;
+                                position: absolute;
+                                content: '';
+                                width: 20%;
+                                height: 3px;
+                                transition: 0.5s;
+                                background-color: #CCA471;
+                            }
                   
                         }
                         p{
@@ -255,10 +269,12 @@
                     }
                 }
                 .Description{
-                  width: 90%;
+                    padding-left: 30px;
+                  width: 100%;
                     h4{
                         color: #ffffff;
                         text-align: left;
+                        padding-left: 40px;
                         cursor: grab;
                         font-family: 'Playfair Display', serif;
                         font-size: 50px;
@@ -267,7 +283,7 @@
                         margin-bottom: 50px;
                         &::before{
                             content: '';
-                            width: 110%;
+                            width: 105%;
                             height: 5px;
                             background: #CCA471;
                             position: absolute;
@@ -304,7 +320,7 @@
                                     }
                                     p{
                                         color: #AAAAAA;
-                                        font-size: 25PX;
+                                        font-size: 26PX;
                                         font-family: 'Source Sans Pro', sans-serif;
                                         line-height: 40px;
                                     }
@@ -357,6 +373,13 @@
             .row{
                 .col-lg-3{
                     .singleTeam{
+                        &:hover{
+                            .AboutTeam{
+                                h4{
+                                    color: #CCA471;
+                                }
+                            }
+                        }
                        .Profile{
                         position: relative;
                        
@@ -371,6 +394,7 @@
                             z-index: -1;
                         }
                         .sosialMedia{
+                            right: 20px;
                             display: flex;
                             gap: 10px;
                            justify-content: center;
@@ -384,12 +408,18 @@
                                 color: #ffffff;
                                 font-size: 16px;
                                 padding: 20px;
+                                transition: 0.5s;
+                                &:hover{
+                                    cursor: pointer;
+                                    background-color: #CCA471;
+                                }
                             }
                            }
                        } 
                       
                        .AboutTeam{
                         h4{
+                            transition: 0.3s;
                             margin: 20px 0;
                             font-family: 'Playfair Display', serif;
                             font-size: 25px;

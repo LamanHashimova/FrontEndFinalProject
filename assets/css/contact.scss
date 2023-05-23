@@ -98,6 +98,7 @@
 #ContactInfo{
     background-color: #030d1d;
     padding: 80px 0;
+   
   .container{
     .row{
         .col-lg-4{
@@ -105,6 +106,14 @@
                 border:  1px solid #212a38;
                 padding: 50px 30px;
                 text-align: center;
+                transition: 0.3s;
+                &:hover{
+                    border-color: #CCA471;
+                    cursor: pointer;
+                    h4{
+                        color: #CCA471;
+                    }
+                }
              .icon{
                 margin-bottom: 30px;
                 i{
@@ -119,6 +128,7 @@
                 font-size: 25px;
                 color: #fff;
                 margin-bottom: 30px;
+                transition: 0.3s;
              } 
              .MainInfo{
                 p{
@@ -126,6 +136,10 @@
                     font-size: 23px;
                     color: #AAAAAA;
                 line-height: 40px;
+                transition: 0.3s;
+                &:hover{
+                    color: #CCA471;
+                }
                 }
              }
             }
@@ -159,6 +173,9 @@
                     width: 100%;
                     font-size: 20px;
                     color: #AAAAAA;
+                    &:focus{
+                        border-color: #CCA471;
+                    }
                  
                 }
                }
@@ -171,6 +188,9 @@
                     width: 100%;
                     font-size: 20px;
                     color: #AAAAAA;
+                    &:focus{
+                        border-color: #CCA471;
+                    }
                 }
                 .submit{
                     text-align: center;
@@ -187,6 +207,12 @@
                         border: none;
                         position: relative;
                         width: 30%;
+                        z-index: 2;
+                        &:hover{
+                            &::before{
+                                height: 100%;
+                            }
+                        }
                         &::before{
                             content: '';
                             width: 100%;
@@ -196,7 +222,8 @@
                             bottom: 0;
                             right: 0;
                             left: 0;
-                            z-index: 11;
+                            transition: 0.5s;
+                            z-index: -10;
                         }
                     }
                 }

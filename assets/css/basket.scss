@@ -228,6 +228,12 @@
                             background-color: #343435;
                             padding: 20px 40px;
                             position: relative;
+                            z-index: 2;
+                            &:hover{
+                                &::before{
+                                    height: 100%;
+                                }
+                            }
                             &::before{
                                 content: '';
                                 width: 100%;
@@ -237,7 +243,8 @@
                                 bottom: 0;
                                 right: 0;
                                 left: 0;
-                                z-index: 11;
+                                transition: 0.5s;
+                                z-index: -10;
                             }
                         }
                     }
@@ -253,6 +260,12 @@
                             background-color: #343435;
                             padding: 20px 40px;
                             position: relative;
+                            z-index: 2;
+                            &:hover{
+                                &::before{
+                                    height: 100%;
+                                }
+                            }
                             &::before{
                                 content: '';
                                 width: 100%;
@@ -262,7 +275,8 @@
                                 bottom: 0;
                                 right: 0;
                                 left: 0;
-                                z-index: 11;
+                                transition: 0.5s;
+                                z-index: -10;
                             }
                             i{
         
